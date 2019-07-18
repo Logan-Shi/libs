@@ -1,0 +1,7 @@
+<launch>
+  <include file="$(find rplidar_ros)/launch/view_rplidar_a3.launch" />
+  <param name="ANGLE_COEF"    type="double" value="2"/>
+  <param name="ROBOT_SPEED"   type="double" value="0.4"/>
+  <node name="lidar_filter" pkg="lidar_filter" type="lidar_filter"/>
+  <node name="simple_controller" pkg="simple_controller" type="simple_controller"/>
+</launch>

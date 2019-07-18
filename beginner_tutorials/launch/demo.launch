@@ -1,0 +1,5 @@
+<?xml version="1.0"?> 
+<launch>  
+    <node pkg="beginner_tutorials" type="talker" name="talker" ns="talker" launch-prefix="xterm -e"> </node> 
+    <node pkg="beginner_tutorials" type="listener" name="listener" ns="listener" launch-prefix="xterm -e"> </node> 
+</launch> 
